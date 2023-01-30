@@ -1,5 +1,6 @@
 package net.catibog.android.codapizza.ui
 
+import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.runtime.Composable
@@ -8,6 +9,7 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.unit.dp
 import net.catibog.android.codapizza.model.Pizza
 import net.catibog.android.codapizza.model.Topping
 
@@ -31,6 +33,9 @@ fun ToppingsList(
     }
 
     LazyColumn(modifier = modifier) {
+        item {
+            PizzaHeroImage(pizza = pizza, modifier = Modifier.padding(16.dp))
+        }
         items(Topping.values()) { topping ->
             ToppingCell(
                 topping = topping,

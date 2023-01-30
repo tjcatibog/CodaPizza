@@ -1,15 +1,18 @@
 package net.catibog.android.codapizza
 
 import android.os.Bundle
+import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.appcompat.app.AppCompatActivity
+import net.catibog.android.codapizza.ui.AppTheme
 import net.catibog.android.codapizza.ui.PizzaBuilderScreen
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            PizzaBuilderScreen()
+            AppTheme {
+                PizzaBuilderScreen()
+            }
         }
     }
 }

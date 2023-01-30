@@ -7,3 +7,4 @@ CodaPizza project app from _Android Programming: The Big Nerd Ranch Guide 5e_
 | Status | Chapter | Description                     |
 |--------|---------|---------------------------------|
 | :x:    | 28      | Pizza sizes and drop-down menus |
+| :x:    | 29      | Animations                      |
